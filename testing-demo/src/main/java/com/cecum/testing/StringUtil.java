@@ -6,9 +6,13 @@ package com.cecum.testing;
 public class StringUtil {
 
     public static String repeat(String str, int times){
+        if(times<0){
+            throw new IllegalArgumentException("negative times not alloned");
+        }
+
         String result = "";
         for (int i = 0; i < times; i++) {
-            result += result;
+            result += str;
         }
         return result;
     }
