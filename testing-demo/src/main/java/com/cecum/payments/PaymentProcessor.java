@@ -12,6 +12,12 @@ public class PaymentProcessor {
     }
 
     public boolean makePayment(double aomunt){
-        return false;
+        PaymentResponse response = paymentsGateway.requestPayment(new PaymentRequest(aomunt));
+        if(response.getStatus() == PaymentResponse.PaymentStatus.OK ){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }

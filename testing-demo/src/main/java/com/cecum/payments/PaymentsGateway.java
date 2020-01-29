@@ -5,6 +5,6 @@ package com.cecum.payments;
  */
 public interface PaymentsGateway {
 
-    PaymentResponse requiestPayment(PaymentRequest request);
+    PaymentResponse requestPayment(PaymentRequest request);
     
 }
