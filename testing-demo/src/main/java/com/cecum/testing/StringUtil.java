@@ -21,6 +21,11 @@ public class StringUtil {
         if (str == null) {
             return true;
         }
-        return str.isEmpty();
+        else if(str.isEmpty()){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }
