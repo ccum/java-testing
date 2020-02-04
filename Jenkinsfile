@@ -1,4 +1,4 @@
-@Library("workflow-spring") _
+@Library("workflow-spring@feature/PAE-323-peru-debub") _
 
 spring {
     country = 'pe'
@@ -7,6 +7,6 @@ spring {
     vars = [
         path_pom: './testing-demo',
         artifactory_id: 'bot-pe-devops',
-        include_files: './java-devops-web/target/java-devops-web.war'
+        include_files: './testing-demo/target/testing-demo-1.0.0-SNAPSHOT.jar'
     ]
 }
