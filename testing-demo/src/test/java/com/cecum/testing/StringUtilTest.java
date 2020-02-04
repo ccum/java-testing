@@ -45,5 +45,9 @@ public class StringUtilTest {
     public void check_null_is_empty(){
         assertTrue(StringUtil.isEmpty(null));
     }
+    @Test
+    public void check_space_is_empty(){
+        assertTrue(StringUtil.isEmpty(" "));
+    }
 
 }

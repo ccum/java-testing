@@ -21,7 +21,7 @@ public class StringUtil {
         if (str == null) {
             return true;
         }
-        else if(str.isEmpty()){
+        else if(str.trim().isEmpty()){
             return true;
         }
         else{
